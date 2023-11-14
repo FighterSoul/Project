@@ -7,6 +7,7 @@
 app-sidenav {
   flex: 0 0 25%; /* Fixed width for the left Sidenav */
   position: fixed; /* Fixed position when scrolling */
+  z-index: 6;
   height: 100vh; /* Full height of the viewport */
   overflow-y: auto; /* Enable vertical scrolling if needed */
 }
@@ -23,6 +24,7 @@ app-feed {
 app-sidebar {
   flex: 0 0 25%; /* Fixed width for the right Sidebar */
   position: fixed;
+  z-index: 6;
   top: 0;
   right: 0;
   height: 100vh;

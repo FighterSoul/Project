@@ -14,6 +14,8 @@
   right: 20px; /* Adjust as needed */
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999; /* Add this line */
+
 }
 
 .chatbox.open {

@@ -2,6 +2,10 @@
   background-color: #282a36;
 }
 .feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   margin: 20px auto 0; /* Added 20px margin to the top, 0 margin to the right and bottom, and auto margin to the left */
   padding: 20px;
