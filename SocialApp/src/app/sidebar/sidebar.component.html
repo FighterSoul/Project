@@ -1,0 +1,41 @@
+<!-- sidebar.component.html -->
+
+<div class="sidebar">
+  <!-- Part 1: Search bar and Add Friend icon -->
+  <div class="search-box">
+    <input type="text" placeholder="Search Friends...">
+    <a href="#" class="add-friend" (click)="toggleAddFriendsSection()">
+      <i class="bi bi-person-plus"></i> <!-- Add Friend icon from Bootstrap Icons -->
+    </a>
+  </div>
+
+  <!-- Part 2: Add Friends Section -->
+  <div class="add-friends-section" *ngIf="isAddFriendsSectionVisible">
+    <div class="add-friends-content">
+      <span class="close" (click)="closeAddFriendsSection()">&times;</span>
+      
+      <!-- Input field for username -->
+      <input type="text" placeholder="Enter username" [(ngModel)]="newFriendUsername">
+  
+      <!-- Search box with suggestions -->
+      <div class="search-box">
+        <!-- Suggestions will be displayed here -->
+      </div>
+  
+      <!-- Arrow pointing up in the bottom middle -->
+      <div class="arrow-up"></div>
+    </div>
+  </div>
+
+  <!-- Part 3: Online Friends -->
+  <div class="online-friends">
+    <h5>Online Friends</h5>
+    <ul class="list-unstyled">
+      <li *ngFor="let friend of friends" (click)="navigateToChatbox()">
+        <a><span class="online-indicator"></span> {{ friend.name }}</a>
+      </li>
+      <!-- Add more friends as needed -->
+    </ul>
+  </div>
+  <app-chatbox></app-chatbox>
+</div>

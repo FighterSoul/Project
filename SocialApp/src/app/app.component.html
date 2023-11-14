@@ -1,0 +1,22 @@
+<div>
+  <app-navbar></app-navbar>
+</div>
+
+<div class="app-container">
+  <app-sidenav></app-sidenav>
+
+  <!-- The following div is unnecessary, and the <router-outlet> should be a direct child of the app-container -->
+  <!-- <div>
+    <router-outlet></router-outlet>
+  </div> -->
+
+  <!-- Place the <router-outlet> directly within the app-container -->
+  <router-outlet></router-outlet>
+
+  
+  <app-sidebar></app-sidebar>
+</div>
+
+<!-- app-profile and app-login components within the main content -->
+<!-- These will appear in place of the feed when you navigate to their respective routes -->
+<router-outlet></router-outlet>

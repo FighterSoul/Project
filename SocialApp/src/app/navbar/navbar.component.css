@@ -1,0 +1,123 @@
+/* Import Dracula theme *//* 
+@import url('path/to/dracula.css'); */
+
+/* Reset some default styling */
+body, h1, h2, h3, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply Dracula color theme */
+body {
+  background-color: #282a36; /* Dracula background color */
+  color: #f8f8f2; /* Dracula text color */
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Set initial background color */
+  background: linear-gradient(to right,#282a36, #44475a);
+  border-bottom: 2px solid #ff79c6;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* Add animation properties */
+  background-size: 200% 100%; /* Increase the background size to create room for animation */
+
+  animation: gradientAnimation 5s infinite ; /* Adjust the duration as needed */
+}
+
+
+
+.logo img {
+  padding-left: 10px;  
+  width: 200px; /* Adjust the width of your logo */
+  height: 100px; /* Auto height to maintain aspect ratio */
+  object-fit: contain; /* Keep the aspect ratio while fitting within the specified width and height */
+}
+
+/* Pink color for the logo */
+.logo {
+  color: #ff79c6; /* Dracula pink color */
+}
+
+/* Gray color for the navbar text */
+.navbar-text {
+  color: #6272a4; /* Dracula comment gray color */
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 10px;
+  max-width: 300px; /* Maximum width for the search bar */
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #6272a4; /* Dracula border color */
+  border-radius: 5px;
+  color: #fff; /* Dracula text color for input */
+  background: linear-gradient(to right, #6272a4, #bd93f9); /* Initial linear gradient background */
+  background-size: 200% 100%; /* Increase the background size to create room for animation */
+  animation: gradientAnimation 3s linear infinite; /* Animation properties */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 0; /* Initial position */
+  }
+  50% {
+    background-position: 0 0; /* Midway position */
+  }
+  100% {
+    background-position: 100% 0; /* Final position */
+  }
+}
+
+.menu-icons {
+  display: flex;
+}
+
+.menu-icons a {
+  margin-left: 15px;
+  margin-right: 30px;
+  color: #bd93f9; /* Dracula text color for icons */
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Adjust icon sizes as needed */
+.bi {
+  font-size: 1.5rem;
+}
+
+.menu-icons a:hover,
+.menu-icons a:active {
+  color: #ff79c6; /* Dracula pink color for icons on hover and click */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar {
+    margin-top: 10px; /* Add some top margin to separate from logo */
+  }
+  
+  .menu-icons {
+    margin-top: 10px; /* Add some top margin to separate from search bar */
+  }
+  
+  .menu-icons a {
+    margin: 0 10px;
+  }
+}

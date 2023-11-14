@@ -1,0 +1,18 @@
+.wrapper {
+  background-color: #282a36;
+}
+.feed {
+  width: 50%;
+  margin: 20px auto 0; /* Added 20px margin to the top, 0 margin to the right and bottom, and auto margin to the left */
+  padding: 20px;
+  margin-top: 120px;
+  background-color: #282a36;
+  
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .feed {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+}

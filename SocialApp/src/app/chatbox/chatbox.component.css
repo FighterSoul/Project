@@ -1,0 +1,113 @@
+/* chatbox.component.css */
+
+/* Chatbox styles */
+.chatbox {
+  width: 300px;
+  background-color: #282a36; /* Dracula background color */
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 400px; /* Set a fixed height or adjust based on your layout */
+  position: fixed;
+  bottom: 0;
+  right: 20px; /* Adjust as needed */
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.chatbox.open {
+  transform: translateY(0);
+}
+
+.chatbox.minimized {
+  height: 40px; /* Adjust as needed */
+}
+
+/* Header styles */
+.header {
+  background-color: #44475a; /* Dracula purple color */
+  color: #f8f8f2; /* Dracula text color */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.controls {
+  margin-left: auto;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  padding: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #f8f8f2; /* Dracula text color */
+}
+
+.active-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #50fa7b; /* Dracula green color */
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #f8f8f2; /* Dracula text color */
+}
+
+/* Chat content styles */
+.chat-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Input area styles */
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #44475a; /* Dracula border color */
+  border-radius: 5px;
+  resize: none;
+  margin-right: 10px;
+  color: #f8f8f2; /* Dracula text color */
+  background: linear-gradient(to right, #6272a4, #44475a, #282a36); /* Dracula gradient colors */
+  background-size: 200% 100%; /* Increase the background size to create room for animation */
+  animation: gradientAnimation 3s infinite; /* Add animated gradient background */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 0; /* Initial position */
+  }
+  50% {
+    background-position: 0 0; /* Midway position */
+  }
+  100% {
+    background-position: 100% 0; /* Final position */
+  }
+}
+
+.emoji-button {
+  background-color: #6272a4; /* Dracula pink color */
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ... (Remaining styles) ... */
