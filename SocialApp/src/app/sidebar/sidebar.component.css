@@ -4,7 +4,6 @@ h5 {
 }
 /* Sidebar styles */
 .sidebar {
-  width: 100%px;
   height: 100vh;
   background-color: #282a36; /* Dracula background color */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
