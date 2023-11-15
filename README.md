@@ -1,13 +1,14 @@
-# Project
-Angular and PHP project 2nd Year Bachelor
+# Project Title
+This project is a second-year Bachelor's degree project, developed using Angular and PHP.
 
-//TODO
+## Tasks to be Completed
 
--Change code elements and objects to variables to use for back end implementation
--Sidenav and Sidebar need to be responsive(maybe toggle menus into small icon when working on smartphone screen)
--Chatbox needs to be modified, chat is hidden and appears when clicking the online friend, implement chatting function and emojis, 
-add closing the chatbox function
--Add create group function which displays a hidden form when clicking the button, fill the form to create study room/group.
--Add study group content(maybe later)
--Complete routing for all components(SPA)
+1. Refactor code: Replace hard-coded elements and objects with variables for backend implementation.
+2. Improve UI responsiveness: The side navigation and sidebar should be responsive. Consider collapsing menus into icons for mobile view.
+3. Enhance chat functionality: Modify the chatbox. Currently, the chat is hidden and only appears when an online friend is clicked. Implement a chatting function, add emoji support, and a feature to close the chatbox.
+4. Implement group creation: Add a function to create a group. This should display a hidden form when the button is clicked. The form will be used to create a study room or group.
+5. Add study group content: This can be considered for future development.
+6. Complete routing: Ensure all components are properly routed for a Single Page Application (SPA) experience.
+
+## Future Improvements
 ...
