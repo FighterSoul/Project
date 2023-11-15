@@ -99,3 +99,10 @@
    margin-top: 100px;
   }
 }
+
+@media screen and (min-width: 1081px) and (max-width: 1440px) {
+  .sidenav {
+    width: 20%;
+  }
+
+}

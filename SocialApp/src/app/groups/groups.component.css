@@ -98,3 +98,8 @@ input {
     color: #f8f8f2;
     background: linear-gradient(to right, #6272a4, #44475a, #282a36);
 }
+.dracula-cyan-green-checkbox .form-check-input:checked {
+    background-color: #50fa7b; /* Dracula cyan green color when checked */
+    border-color: #282a36; /* Dracula cyan green color for the border */
+  }
+  

@@ -145,3 +145,8 @@ h5 {
     display: none;
   }
 }
+@media screen and (min-width: 1081px) and (max-width: 1440px) {
+  .sidebar {
+    width: 20%;
+  }
+}
