@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -37,6 +37,13 @@ export class PostComponent {
    // Variable to store the posting time
    postTime: Date = new Date();
 
+   @ViewChild('dummyElement') dummyElement: ElementRef;
+   @ViewChild('addedComment') addedComment: ElementRef;
+   constructor() {
+    // Initialize dummyElement here if needed
+     this.dummyElement = new ElementRef(null); // Example initialization
+     this.addedComment = new ElementRef(null);
+  }
   toggleLikePost() {
     this.userLiked = !this.userLiked;
     this.likeCount += this.userLiked ? 1 : -1;
@@ -67,8 +74,12 @@ export class PostComponent {
         responses: []
       });
 
+      // Close the comment form after submitting
+       this.commentFormVisible = false;
       // Clear the commentText variable for the next comment
       this.commentText = '';
+      this.dummyElement.nativeElement.focus();
+      
     }
   }
   toggleLikeComment(comment: any) {
@@ -100,7 +111,7 @@ export class PostComponent {
     }
   }
   // Add a response to a comment
-  addResponse(comment: Comment) {
+  addResponse(comment: any) {
     // Assuming you have a responseText property in the Comment interface
     const responseText = comment.responseText ?? ''; // Use an empty string if comment.responseText is undefined
   
@@ -109,9 +120,14 @@ export class PostComponent {
         user: this.userName,
         text: responseText
       });
-  
+      
+      // Close the response form after submitting
+       comment.responding = false;
       // Clear the responseText variable for the next response
-      comment.responseText = '';
+        comment.responseText = '';
+
+         // Focus on the added comment to bring it into view
+    this.addedComment.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   }
 

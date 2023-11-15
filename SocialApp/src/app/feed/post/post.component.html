@@ -38,10 +38,11 @@
         </div>
     </div>
 </div>
-
+<!-- Dummy element for focusing after submitting a comment -->
+<div #dummyElement></div>
 <!-- Comment Form (Initially hidden) -->
 <div class="comment-form" [style.display]="commentFormVisible ? 'block' : 'none'">
-    <textarea class="form-control" rows="2" placeholder="Write your comment..." [(ngModel)]="commentText"></textarea>
+    <textarea class="form-control" rows="1" placeholder="Write your comment..." [(ngModel)]="commentText" (keyup.enter)="addComment()"></textarea>
     <button type="button" class="btn btn-primary btn-sm" (click)="addComment()">Submit</button>
   </div>
   
@@ -73,14 +74,14 @@
   
         <!-- Respond to Comment Button (color red) -->
         <div class="d-flex justify-content-end">
-          <button type="button" class="respond" (click)="toggleResponding(comment)">
+          <button type="button" class="btn btn-primary btn-sm" (click)="toggleResponding(comment)">
             <i class="bi bi-reply"></i> Respond</button>
         </div>
       </div>
   
       <!-- Respond to Comment Form (Initially hidden) -->
       <div class="comment-form" [style.display]="comment.responding ? 'block' : 'none'">
-        <textarea class="form-control" rows="2" placeholder="Write your response..." [(ngModel)]="comment.responseText"></textarea>
+        <textarea class="form-control" rows="1" placeholder="Write your response..." [(ngModel)]="comment.responseText" (keyup.enter)="addResponse(comment)"></textarea>
         <button type="button" class="btn btn-primary btn-sm" (click)="addResponse(comment)">Submit</button>
       </div>
   
@@ -93,4 +94,3 @@
   
   
 <script src="script.js"></script>
-

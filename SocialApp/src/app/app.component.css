@@ -30,9 +30,17 @@ app-sidebar {
 }
 
 /* Responsive Styles for Smartphones */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width:320px) and (max-width: 720px) {
   app-sidenav,
   app-sidebar {
     display: none; /* Hide the sidenav and sidebar on small screens */
   }
 }
+
+@media screen and (min-width:721px) and (max-width: 1080px) {
+  app-sidenav,
+  app-sidebar {
+    display: block; /* Hide the sidenav and sidebar on small screens */
+  }
+}
+

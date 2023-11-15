@@ -16,11 +16,28 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .feed {
     justify-content: center;
     align-items: center;
-    
+    width: 100%; /* Adjust the width for smaller screens */
+    margin-top: 250px;
+    margin-left: -50px;
   }
- 
+  .wrapper{
+    margin-top:-30px;
+}
+}
+/* Responsive Styles */
+@media screen and (max-width: 720px) {
+  .feed {
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust the width for smaller screens */
+    margin-top: 250px;
+    margin-left: -50px;
+  }
+  .wrapper{
+    margin-top:-30px;
+}
 }
