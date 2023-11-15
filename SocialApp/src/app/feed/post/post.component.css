@@ -259,10 +259,15 @@ button.btn-outline-danger.btn-sm.respond-button:hover {
   .post {
     width: 100%;
     padding: 10px;
-
   }
-
   .full-screen-image {
     cursor: pointer;
   }
+}
+@media screen and (min-width: 721px) and (max-width: 1080px) {
+  .post {
+    width: 150%;
+    padding: 10px;
+  }
+
 }

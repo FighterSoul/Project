@@ -38,9 +38,9 @@ app-sidebar {
 }
 
 @media screen and (min-width:721px) and (max-width: 1080px) {
-  app-sidenav,
-  app-sidebar {
+  app-sidenav {
     display: block; /* Hide the sidenav and sidebar on small screens */
   }
+
 }
 

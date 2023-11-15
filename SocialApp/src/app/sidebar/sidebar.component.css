@@ -80,45 +80,6 @@ h5 {
   margin-right: 5px; /* Adjust the spacing between the indicator and the name */
 }
 
-/* Media query for smaller screens (e.g., smartphones) */
-@media only screen and (max-width: 768px) {
-  .sidebar {
-    transform: translateX(-100%);
-  }
-}
-
-/* Inside your sidebar.component.css */
-
-.add-friends-section {
-  display: none;
-}
-
-.add-friends-content {
-  position: relative;
-  border: 1px solid #44475a; /* Dracula border color */
-  padding: 20px;
-  background-color: #282a36; /* Dracula background color */
-}
-
-.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-}
-
-/* Styles for the arrow */
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #282a36; /* Dracula background color */
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 /* Add Friend button styles */
 .add-friend {
   display: block;
@@ -151,5 +112,36 @@ h5 {
   }
   100% {
     background-position: 100% 0; /* Final position */
+  }
+}
+/* Media query for smaller screens (e.g., smartphones) */
+@media only screen and (max-width: 720px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1080px) {
+  .sidebar {
+    width: 70px; /* Adjusted width for screens between 721px and 1080px */
+  }
+  /* Hide the search box */
+  .search-box {
+    display: none;
+  }
+  /* Adjust the width of the "Add Friend" button */
+  .search-box .add-friend {
+    width: 40px; /* Adjusted width for the "Add Friend" button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  /* Optionally hide the text in the "Add Friend" button */
+  .add-friend i {
+    display: none;
+  }
+  .online-friends {
+    display: none;
   }
 }

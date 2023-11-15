@@ -8,26 +8,7 @@
       <i class="bi bi-person-plus"></i> <!-- Add Friend icon from Bootstrap Icons -->
     </a>
   </div>
-
-  <!-- Part 2: Add Friends Section -->
-  <div class="add-friends-section" *ngIf="isAddFriendsSectionVisible">
-    <div class="add-friends-content">
-      <span class="close" (click)="closeAddFriendsSection()">&times;</span>
-      
-      <!-- Input field for username -->
-      <input type="text" placeholder="Enter username" [(ngModel)]="newFriendUsername">
-  
-      <!-- Search box with suggestions -->
-      <div class="search-box">
-        <!-- Suggestions will be displayed here -->
-      </div>
-  
-      <!-- Arrow pointing up in the bottom middle -->
-      <div class="arrow-up"></div>
-    </div>
-  </div>
-
-  <!-- Part 3: Online Friends -->
+  <!-- Part 2: Online Friends -->
   <div class="online-friends">
     <h5>Online Friends</h5>
     <ul class="list-unstyled">

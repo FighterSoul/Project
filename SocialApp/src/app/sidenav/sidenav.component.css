@@ -63,8 +63,39 @@
 }
 
 /* Responsive styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .sidenav {
     padding-top: 15px;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1080px) {
+  .sidenav {
+    width: 70px; /* Adjusted width for screens between 721px and 1080px */
+  }
+  .profile-box{
+    display: none;
+  }
+  /* Optionally hide the text in menu items */
+  .menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+  }
+  .menu a i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .menu a span {
+    display: none;
+  }
+  /* Optionally show only the icons in menu items */
+  .menu li {
+    text-align: center;
+  }
+  .menu {
+   margin-top: 100px;
   }
 }
