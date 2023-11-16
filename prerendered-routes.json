@@ -1,0 +1,10 @@
+{
+  "routes": [
+    "/chatbox",
+    "/chatwindow",
+    "/feed",
+    "/friends",
+    "/groups",
+    "/profile"
+  ]
+}
