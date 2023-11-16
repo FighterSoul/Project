@@ -17,25 +17,6 @@ export class SidebarComponent {
     {name:'John'}  //sample data
   ]
 
-  isAddFriendsSectionVisible = false;
-  newFriendUsername = '';
-
-  constructor(private router: Router) {}
-
-  navigateToChatbox() {
-    this.router.navigate(['/chatbox']);
-}
-
-
-toggleAddFriendsSection() {
-  this.isAddFriendsSectionVisible = !this.isAddFriendsSectionVisible;
-}
-
-closeAddFriendsSection() {
-  this.isAddFriendsSectionVisible = false;
-  // Optionally, you can reset the input field value here
-  this.newFriendUsername = '';
-}
 }
 
 
