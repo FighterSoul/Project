@@ -21,6 +21,11 @@ export class NavbarComponent implements OnInit {
   navigateToFeed() {
     this.router.navigate(['/feed']);
   }
+  
+  navigateToChatwindow() {
+    this.router.navigate(['/chatwindow']);
+  }
+
   ngOnInit(): void {
     // Check if the application is running in a browser environment
     if (isPlatformBrowser(this.platformId)) {

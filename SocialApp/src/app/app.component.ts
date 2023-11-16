@@ -13,13 +13,14 @@ import { NgModule} from '@angular/core'
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { FriendsComponent } from './friends/friends.component';
+import { ChatwindowComponent } from './chatwindow/chatwindow.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, NavbarComponent, FeedComponent, 
   PostComponent, SidenavComponent, SidebarComponent, ProfileComponent, LoginComponent,
-  RouterModule, ChatboxComponent,FriendsComponent],
+  RouterModule, ChatboxComponent,FriendsComponent, ChatwindowComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

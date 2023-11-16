@@ -7,6 +7,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FriendsComponent } from './friends/friends.component';
 import { ChatboxComponent } from './chatbox/chatbox.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ChatwindowComponent } from './chatwindow/chatwindow.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/feed', pathMatch: 'full' },
@@ -15,5 +16,6 @@ export const routes: Routes = [
   { path: 'groups', component: GroupComponent },
   { path: 'friends', component: FriendsComponent},
   { path: 'chatbox', component: ChatboxComponent},
+  { path: 'chatwindow', component: ChatwindowComponent},
   // Add other routes as needed
 ];
