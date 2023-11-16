@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -24,6 +24,22 @@ export class SidenavComponent {
     this.router.navigate(['/friends']);
   }
   
+  @HostListener('window:click', ['$event'])
+  closeSidenav(event: Event): void {
+    const targetElement = event.target as HTMLElement;
 
+    // Check if the clicked element is a link inside the sidenav
+    if (targetElement.matches('.app-sidenav span')) {
+      // Check if the screen width is between 320px and 768px
+      const screenWidth = window.innerWidth;
+      if (screenWidth >= 320 && screenWidth <= 768) {
+        // Add the logic to close the sidenav here
+        const sidenavElement = document.getElementById('navbarSupportedContent22');
+        if (sidenavElement && sidenavElement.classList.contains('show')) {
+          sidenavElement.classList.remove('show');
+        }
+      }
+    }
+  }
 
 }
