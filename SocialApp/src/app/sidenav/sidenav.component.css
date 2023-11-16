@@ -63,12 +63,13 @@
 }
 
 /* Responsive styles */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .sidenav {
     padding-top: 15px;
+    margin-top: 48px;
   }
 }
-@media screen and (min-width: 721px) and (max-width: 1080px) {
+@media screen and (min-width: 769px) and (max-width: 1080px) {
   .sidenav {
     width: 70px; /* Adjusted width for screens between 721px and 1080px */
   }

@@ -115,13 +115,13 @@ h5 {
   }
 }
 /* Media query for smaller screens (e.g., smartphones) */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   .sidebar {
     transform: translateX(-100%);
   }
 }
 
-@media screen and (min-width: 721px) and (max-width: 1080px) {
+@media screen and (min-width: 769px) and (max-width: 1080px) {
   .sidebar {
     width: 70px; /* Adjusted width for screens between 721px and 1080px */
   }
