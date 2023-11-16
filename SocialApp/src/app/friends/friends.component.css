@@ -70,14 +70,16 @@
 }
 */
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
   }
-
+  .container {
+    margin-top: 20%;
+  }
   .row {
     display: flex;
     flex-wrap: wrap;
