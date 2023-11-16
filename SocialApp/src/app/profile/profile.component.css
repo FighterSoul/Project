@@ -79,12 +79,13 @@
   padding: 8px 16px;
   cursor: pointer;
   transition: filter 0.3s ease; /* Add smooth transition for hover effect */
+  border-radius: 25px;
 }
 
 input {
   background: linear-gradient(to right, #6272a4, #44475a, #282a36); /* Dracula gradient colors */
   background-size: 200% 100%; /* Increase the background size to create room for animation */
-  animation: gradientAnimation 3s infinite; /* Add animated gradient background */
+  animation: gradientAnimation 30s infinite; /* Add animated gradient background */
 }
 
 @keyframes gradientAnimation {
@@ -97,4 +98,22 @@ input {
   100% {
     background-position: 100% 0; /* Final position */
   }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    margin-top: 70px;
+  }
+  
+}
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+.container {
+  width: 80%;
+}
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1440px) {
+  .container {
+    width: 57%;
+  }
+
 }

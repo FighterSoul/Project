@@ -219,13 +219,4 @@ button[data-toggle="collapse"] i {
   top: 21px;
   left: 8px;
 }
-.app-sidenav-container {
-  position: relative;
-  margin-top: -100px; /* Adjust the margin-top as needed */
-}
 
-.app-sidenav {
-  position: absolute;
-  top: 0;
-  left: 0;
-}

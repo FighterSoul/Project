@@ -102,4 +102,15 @@ input {
     background-color: #50fa7b; /* Dracula cyan green color when checked */
     border-color: #282a36; /* Dracula cyan green color for the border */
   }
+  @media screen and (max-width: 768px) {
+   .container{
+    margin-top: 100px;
+   }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1080px) {
+  }
   
+  @media screen and (min-width: 1081px) and (max-width: 1440px) {
+    
+  
+  }

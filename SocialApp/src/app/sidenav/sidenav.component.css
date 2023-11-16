@@ -55,6 +55,9 @@
   text-decoration: none;
   transition: 0.3s;
 }
+.menu a span {
+  padding-left: 10px;
+}
 
 .menu a:hover,
 .menu a:active {
@@ -67,6 +70,8 @@
   .sidenav {
     padding-top: 15px;
     margin-top: 48px;
+    height: 80%;
+    border-radius: 25px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1080px) {

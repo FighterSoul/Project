@@ -104,7 +104,7 @@
   border-radius: 5px;
   padding: 8px;
   margin-bottom: 8px;
-  animation: gradientAnimation 5s infinite; /* Add animated gradient background */
+  animation: gradientAnimation 30s infinite; /* Add animated gradient background */
   background-size: 200% 100%; /* Increase the background size to create room for animation */
   height: 5px;
 }
