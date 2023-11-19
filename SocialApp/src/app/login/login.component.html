@@ -1,6 +1,6 @@
 <!-- login.component.html -->
-<div class="wrapper">
-<div class="container mt-5">
+<div class="wrapper" *ngIf="clickedd">
+  <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
         <div class="card shadow"> <!-- Added Bootstrap shadow class -->
@@ -22,7 +22,7 @@
             </form>
   
             <p class="mt-2"> <!-- Adjusted margin-top class to mt-2 -->
-              Don't have an account? <a (click)="goToRegister()">Create one</a>
+              Don't have an account? <a (click)="goToRegister()" (click)="clicked()">Create one</a>
             </p>
           </div>
         </div>

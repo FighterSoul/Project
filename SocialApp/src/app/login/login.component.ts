@@ -17,6 +17,7 @@ export class LoginComponent {
 
   username: string = '';
   password: string = '';
+  clickedd:boolean=true;
 
   submitForm() {
     // Additional logic if needed
@@ -27,5 +28,8 @@ export class LoginComponent {
 
   goToRegister() {
     this.router.navigate(['/register']);
+  }
+  clicked(){
+    this.clickedd=false;
   }
 }
