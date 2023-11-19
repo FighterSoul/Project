@@ -4,10 +4,11 @@
   color: #fff;
 }
 .container {
-  max-width: 800px; /* Adjust the maximum width as needed */
+  width: 800px; /* Adjust the maximum width as needed */
   padding-top: 150px;
   color: #f8f8f2; /* Dracula text color */
   background-color: #282a36;
+  margin-left: 70%;
 }
 
 .card {

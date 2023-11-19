@@ -1,6 +1,7 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener,Output, EventEmitter} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { LoginComponent } from '@app/login/login.component';
 
 
 @Component({
@@ -11,6 +12,9 @@ import { Router } from '@angular/router';
   styleUrl: './sidenav.component.css'
 })
 export class SidenavComponent {
+  @Output() logoutClicked = new EventEmitter<void>();
+
+  isLoggedIn: boolean = true; // Initialize with the actual initial state
 
   constructor(private router: Router) {}
 
@@ -23,7 +27,11 @@ export class SidenavComponent {
   navigateToFriends() {
     this.router.navigate(['/friends']);
   }
-  
+
+  onLogoutClick() {
+    this.logoutClicked.emit();
+  }
+
   @HostListener('window:click', ['$event'])
   closeSidenav(event: Event): void {
     const targetElement = event.target as HTMLElement;

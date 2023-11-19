@@ -8,6 +8,8 @@ import { FriendsComponent } from './friends/friends.component';
 import { ChatboxComponent } from './chatbox/chatbox.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ChatwindowComponent } from './chatwindow/chatwindow.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/feed', pathMatch: 'full' },
@@ -17,5 +19,7 @@ export const routes: Routes = [
   { path: 'friends', component: FriendsComponent},
   { path: 'chatbox', component: ChatboxComponent},
   { path: 'chatwindow', component: ChatwindowComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'register', component: RegisterComponent },
   // Add other routes as needed
 ];

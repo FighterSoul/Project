@@ -10,6 +10,8 @@ body {
 
 .container {
     padding-top: 160px; /* Adjusted padding-top for better visual balance */
+    margin-left: 70%;
+    width: 800px;
 }
 
 .input-group {
